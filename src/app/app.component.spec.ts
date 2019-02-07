@@ -19,13 +19,13 @@ describe('AppComponent', () => {
   it(`should have as title 'dynamic-checkboxes'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('dynamic-checkboxes');
+    expect(app.title).toEqual('dynamic-entries');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to dynamic-checkboxes!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to dynamic-entries!');
   });
 });

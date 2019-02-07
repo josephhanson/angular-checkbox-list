@@ -1,0 +1,11 @@
+
+<div
+  (click)="onClick()"
+  [class.selected]="item.selected">
+  <input
+    type="checkbox"
+    class="checkbox"
+    [checked]="item.selected"
+    [value]="item.value">
+      {{item.display}}
+</div>
